@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="animalsApp">
+<head>
+    <base href="/"/>
+    <meta charset="UTF-8">
+    <title>Animal App</title>
+    <link rel="stylesheet" href="app/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="app/css/app.css"/>
+</head>
+<body>
+<div class="container">
+
+    <!-- for ngRoute>-->
+    <ng-view></ng-view>
+
+    <!-- If i would like to use UI ROUTER i would use the following directive: -->
+    <!--<ui-view></ui-view> -->
+
+</div>
+
+<script src="app/lib/jquery.min.js"></script>
+<script src="app/lib/bootstrap.min.js"></script>
+<script src="app/lib/angular/angular.js"></script>
+<script src="app/lib/angular/angular-resource.js"></script>
+<script src="app/lib/angular/angular-route.min.js"></script>
+<script src="app/lib/angular/angular-material.js"></script>
+<script src="app/lib/angular/angular-aria.js"></script>
+<script src="app/lib/angular/angular-animate.js"></script>
+<!--<script src="app/lib/angular/angular-ui-router.js"></script>-->
+<script src="app/lib/angular/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script src="app/lib/underscore-1.4.4.min.js"></script>
+<script src="app/js/app.js"></script>
+
+<script src="app/js/controllers/AnimalController.js"></script>
+<script src="app/js/controllers/loginCtrl.js"></script>
+
+<script src="app/js/controllers/AnimalListController.js"></script>
+<script src="app/js/controllers/EditAnimalController.js"></script>
+<script src="app/js/controllers/AnimalCartController.js"></script>
+
+<script src="app/js/directives/animalsListDirective.js"></script>
+<script src="app/js/directives/onlyDigitsDirective.js"></script>
+<script src="app/js/directives/onlyCharsDirective.js"></script>
+
+<script src="app/js/services/AnimalData.js"></script>
+<script src="app/js/services/AnimalCart.js"></script>
+<script src="app/js/factory/fac.js"></script>
+
+
+
+
+
+
+</body>
+</html>

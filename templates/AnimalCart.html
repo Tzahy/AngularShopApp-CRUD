@@ -1,0 +1,35 @@
+<div>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <ul class="nav">
+                <li><a href="animals">Home</a></li>
+                <li><a href="newAnimal">Add New Item</a></li>
+                <li style="padding-left: 615px"><a href="buy">Order</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <h1>My Cart</h1>
+    <h3>
+        Total: {{total() | currency}}
+    </h3>
+    <hr />
+    <hr />
+    <ul>
+        <li ng-repeat="animal in animals|filter:searchText" class="span5">
+            <a href="animal/{{animal.id}}">
+            <div class="well hoverwell">
+                <div class="row"><h2 class="span6">{{animal.name}}</h2></div>
+                <img ng-src="{{animal.imageUrl}}" src=""/>
+                <div class="row"><span class="span1">Price:</span><span>{{animal.price | currency}}</span></div>
+                <div class="row"><span class="span1">Age:</span><span>{{animal.age}}</span></div>
+                <br>
+                <button type="button" ng-click="removeAnimalFromCart(animal)" class="btn btn-default">Remove</button>
+            </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+

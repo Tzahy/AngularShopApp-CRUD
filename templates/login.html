@@ -1,0 +1,22 @@
+<h1 style="padding-top: 100px;width: 400px;margin:auto auto">Login Page</h1><br><br>
+<div style="width: 400px;margin:auto auto" ng-controller="loginCtrl">
+    <form name="LoginForm" novalidate>
+
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Name</label>
+            <input ng-model="user.name" ng-required="true" name="user_name">
+        </md-input-container>
+
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Password</label>
+            <input type="password" ng-model="user.password" ng-maxlength="10" ng-required="true" name="user_password">
+        </md-input-container>
+
+    </form>
+
+    <button type="submit" ng-disabled="LoginForm.$invalid" ng-click="chkLoginAndGo(animal, LoginForm)" class="btn btn-primary">Go</button>
+
+</div>
+
+
+

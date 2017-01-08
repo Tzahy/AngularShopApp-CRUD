@@ -1,0 +1,22 @@
+<div>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <ul class="nav">
+                <li><a href="newAnimal">Add New Animal</a></li>
+                <li><a href="cart">My Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1>Animals List</h1>
+    <hr />
+    <hr />
+    <label>Search: <input type="text" class="form-control" placeholder="Search for..." ng-model="searchText"></label><br><br>
+    <ul>
+        <li ng-repeat="animal in animals|filter:searchText" class="span5">
+            <!-- Using custom directive to show the animal list-->
+            <animals-list-directive-template />
+        </li>
+    </ul>
+</div>
+
+
