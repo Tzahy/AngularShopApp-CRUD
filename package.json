@@ -1,16 +1,11 @@
 {
-  "name": "demoapp",
+  "name": "AngularShopCRUD-App",
   "version": "1.0.0",
-  "description": "This project is a sample application demonstrating a more fully developed realistic single page angular application.",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Joe Eames & Jim Cooper",
-  "license": "ISC",
+  "description": "Animal shop CRUD application. Using AngularJS for the frontend client and Node.JS for the backend server.\
+Use some Angular elements such as custom directives, services, routing, filters, validations, Bootstrap for UI etc.\
+Use Node.JS to store information on the hard drive (to illustrate a database).",
+  "author": "Tzahy Segal",
+  "license": "",
   "dependencies": {
     "body-parser": "^1.13.1",
     "express": "4.13.0"
